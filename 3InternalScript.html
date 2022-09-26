@@ -29,17 +29,15 @@
     code in the function can be executed by using the function name. This
     is referred to as "Calling" the function or a function "Call".
   </p>
-  <p>
-    <pre>
-    &lt;head&gt;
-      &lt;script&gt;
-        function GoToPage2()
-        {
-          window.location = "2InlineEvent.html";
-        }
-      &lt;/script&gt;
-    &lt;/head&gt;</pre>
-  </p>
+  <pre>
+  &lt;head&gt;
+    &lt;script&gt;
+      function GoToPage2()
+      {
+        window.location = "2InlineEvent.html";
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;</pre>
   <p>
     The event handler assignment now looks like this:<br />
     &lt;button onclick="GoToPage2()"&gt;&lt;- InlineEvent&lt/button&gt;
@@ -48,7 +46,7 @@
   <p>
     In this case the functionality is exactly the same but it makes
     for much cleaner code. Also the handler function can be called from
-    other locations which prevents duplication.
+    other places in the page which prevents duplication.
   </p>
   <pre>
   <a href="2InlineEvent.html" class="button">&lt;- InlineEvent</a>          <a href="4ExternalScript.html" class="button">4ExternalScript -&gt;</a></pre>
