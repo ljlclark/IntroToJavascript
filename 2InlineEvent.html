@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 2InlineScript.html -->
+<html>
+<head>
+  <title>Inline Event Handler</title>
+  <meta name="author" content="Lester J. Clark" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel='stylesheet' type='text/css' href='Intro.css' />
+</head>
+<body>
+  <p>
+    <pre><a href="index.html">Home</a> / InlineEvent</pre>
+  </p>
+  <h3 id="title">Inline Event Handler</h3>
+  <p>
+    There are many different events that can occur and each one has a specific
+    name. One of the most common events is a "click" event.
+  </p>
+  <p>
+    Event Handler code can be assigned at the element level. This code will
+    be run for only that element and that is the only code that will be
+    executed for that element event.
+  </p>
+  <p>
+    This is an example of the Button element running the code to jump to a
+    different page when it is clicked with the mouse button.<br />
+    &lt;button onclick="window.location='1Javascript.html'"&gt;&lt;- Javascript&lt/button&gt;
+  </p>
+  <p>
+    The "onclick" event is assigned the handler code "window.location=
+    '1Javascript.html'". This jumps to the specified page when the button is
+    clicked.
+  </p>
+  <button onclick="window.location='1Javascript.html'">&lt;- Javascript</button>
+  <p>
+    This type of event handler code should only used if there is only one or
+    two code statements to be executed.
+  </p>
+  <pre>
+  <a href="1Javascript.html" class="button">&lt;- Javascript</a>          <a href="3InternalScript.html" class="button">InternalScript -&gt;</a></pre>
+  <h6>2InlineEvent</h6>
+</body>
+</html>

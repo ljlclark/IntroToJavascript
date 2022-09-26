@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 3InternalScript.html -->
+<html>
+<head>
+  <title>Internal Script</title>
+  <meta name="author" content="Lester J. Clark" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel='stylesheet' type='text/css' href='Intro.css' />
+  <script>
+    function GoToPage2()
+    {
+      window.location = "2InlineEvent.html";
+    }
+  </script>
+</head>
+<body>
+  <p>
+    <pre><a href="index.html">Home</a> / InternalScript</pre>
+  </p>
+  <h3 id="title">Internal Script</h3>
+  <p>
+    In most cases there will be several lines of code that need to be executed
+    for an event handler. For these cases the "script" element can be added to
+    the "head" element. The Script element can contain Javascript Functions.
+  </p>
+  <p>
+    Javascript functions are blocks of code that have a unique name. The
+    code in the function can be executed by using the function name. This
+    is referred to as "Calling" the function or a function "Call".
+  </p>
+  <p>
+    <pre>
+    &lt;head&gt;
+      &lt;script&gt;
+        function GoToPage2()
+        {
+          window.location = "2InlineEvent.html";
+        }
+      &lt;/script&gt;
+    &lt;/head&gt;</pre>
+  </p>
+  <p>
+    The event handler assignment now looks like this:<br />
+    &lt;button onclick="GoToPage2()"&gt;&lt;- InlineEvent&lt/button&gt;
+  </p>
+  <button onclick="GoToPage2()">&lt;- InlineEvent</button>
+  <p>
+    In this case the functionality is exactly the same but it makes
+    for much cleaner code. Also the handler function can be called from
+    other locations which prevents duplication.
+  </p>
+  <pre>
+  <a href="2InlineEvent.html" class="button">&lt;- InlineEvent</a>          <a href="4ExternalScript.html" class="button">4ExternalScript -&gt;</a></pre>
+  <h6>3InternalScript</h6>
+</body>
+</html>
