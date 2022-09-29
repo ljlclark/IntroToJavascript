@@ -3,5 +3,5 @@
 
 function GoToPage3()
 {
-  window.location = "3InternalScript.html";
+  window.location.href = "6InternalScript.html";
 }
