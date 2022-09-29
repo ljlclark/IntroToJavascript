@@ -1,7 +1,7 @@
 "use strict";
 // Intro.js
 
-function GoToPage3()
+function GoToInternalScript()
 {
   window.location.href = "6InternalScript.html";
 }

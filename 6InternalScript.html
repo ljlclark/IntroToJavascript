@@ -10,7 +10,7 @@
   <script>
 
     // Display another page.
-    function GoToPage2()
+    function GoToInlineEvent()
     {
       window.location.href = "5InlineEvent.html";
     }
@@ -35,7 +35,7 @@
   <pre>
   &lt;head&gt;
     &lt;script&gt;
-      function GoToPage2()
+      function GoToInlineEvent()
       {
         window.location.href = "5InlineEvent.html";
       }
@@ -43,9 +43,9 @@
   &lt;/head&gt;</pre>
   <p>
     The event handler assignment now looks like this:<br />
-    &lt;button onclick="GoToPage2()"&gt;&lt;- InlineEvent&lt/button&gt;
+    &lt;button onclick="GoToInlineEvent()"&gt;&lt;- InlineEvent&lt/button&gt;
   </p>
-  <button onclick="GoToPage2()">&lt;- InlineEvent</button>
+  <button onclick="GoToInlineEvent()">&lt;- InlineEvent</button>
   <p>
     In this case the functionality is exactly the same but it makes
     for much cleaner code. Also the handler function can be called from
