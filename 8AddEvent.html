@@ -38,15 +38,13 @@
     The addEventListener() function of the target element is used to make the
     assignment.
   </p>
-  <p>
-    The target element can be referenced directly by its "id" name.
-  </p>
   <pre>
   &lt;head&gt;
     &lt;script&gt;
       // Adds the required event handler assignment.
       function AddEvents()
       {
+        //let titleVar = document.getElementById("title");
         title.addEventListener("click", TitleClick);
       }
 
@@ -59,12 +57,11 @@
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h3 id="title"&gt;Adding an Event&lt;/h3&gt;
-
-    &lt;script&gt;
-      AddEvents();
-    &lt;/script&gt;
+    &lt;script&gt;AddEvents();&lt;/script&gt;
   &lt;/body&gt;</pre>
   <a href="7ExternalScript.html" class="button">&lt;- ExternalScript</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="9SetText.html" class="button">SetText -&gt;</a>
   <h6>8AddEvent</h6>
 
   <script>
