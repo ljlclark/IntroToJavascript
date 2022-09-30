@@ -12,8 +12,8 @@
     // Adds the required event handler assignment.
     function AddEvents()
     {
-      //let titleVar = document.getElementById("title");
-      title.addEventListener("click", TitleClick);
+      //let pageTitle = document.getElementById("title");
+      pageTitle.addEventListener("click", TitleClick);
     }
 
     // The title click event handler.
@@ -28,14 +28,14 @@
     / <a href="index.html">Home</a>
     / AddEvent
   </div>
-  <h3 id="title">Adding an Event</h3>
+  <h3 id="pageTitle">Adding an Event</h3>
   <p>
     Event handlers can be assigned to an element in a script function instead
     of adding them with an inline event. Notice the AddEvents() function call
     at the end of the &lt;body&gt; element.
   </p>
   <p>
-    The addEventListener() function of the target element is used to make the
+    The addEventListener() method of the target element is used to make the
     assignment.
   </p>
   <pre>
@@ -44,8 +44,8 @@
       // Adds the required event handler assignment.
       function AddEvents()
       {
-        //let titleVar = document.getElementById("title");
-        title.addEventListener("click", TitleClick);
+        //let pageTitle = document.getElementById("title");
+        pageTitle.addEventListener("click", TitleClick);
       }
 
       // The title click event handler.
@@ -56,7 +56,7 @@
     &lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;h3 id="title"&gt;Adding an Event&lt;/h3&gt;
+    &lt;h3 id="pageTitle"&gt;Adding an Event&lt;/h3&gt;
     &lt;script&gt;AddEvents();&lt;/script&gt;
   &lt;/body&gt;</pre>
   <a href="7ExternalScript.html" class="button">&lt;- ExternalScript</a>
