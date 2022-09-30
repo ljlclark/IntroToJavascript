@@ -17,21 +17,26 @@
   <h3 id="pageTitle">Object Oriented Programming</h3>
   <p>
     The functions created so far have all become part of the "window" object.
+    They are called Global functions because they can be called from anywhere
+    in the Javascript.
   </p>
   <p>
-    If another script file is loaded with a function using the same name, then
-    the previous function is replaced with the new function. In this case it
-    can be a challenge to figure out what is wrong. This is where OOP is useful.
+    If another script file is loaded with a global function using the same name,
+    then the previous function is replaced with the new function. In this case
+    it can be hard to figure out what is wrong.
   </p>
   <p>
-    With OOP a Class definition can be created that contains the data values
+    When an object or other data is created in Javascript, outside of a function
+    or another object, they also are Global and must have a unique name.
+  </p>
+  <p>
+    With OOP, a Class definition can be created that contains the data values
     and methods required to provide some custom object behavior.
   </p>
   <p>
-    When an object is created from that Class; the created object is added
-    to the "window" object and it's name must be unique for that page. However,
-    the data and function names inside the object are safe. This is called
-    encapsulation; because the data and functions are contained in the object.
+    When an object is created from that Class the data and method names inside
+    the object do not have to be unique from other objects. This is called
+    encapsulation; because the data and methods are contained in the object.
   </p>
   <p>
     An object is create from a Class by using the "new" keyword.<br />
