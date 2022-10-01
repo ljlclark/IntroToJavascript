@@ -2,7 +2,7 @@
 <!-- 12ClassEvents.html -->
 <html lang="en">
 <head>
-  <title>Class Events</title>
+  <title>Class Event Handlers</title>
   <meta name="author" content="Lester J. Clark" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -14,7 +14,7 @@
     / <a href="index.html">Home</a>
     / ClassEvents
   </div>
-  <h3 id="pageTitle">Class Events</h3>
+  <h3 id="pageTitle">Class Event Handlers</h3>
   <p>
     A class can be defined that assigns the event handlers required for that
     class. It can also contain the event handler methods. This way all the
@@ -36,14 +36,11 @@
   // Code in IntroToJS.js file.
   class TitleClass
   {
-    // Adds the required event handler assignment.
     AddEvents()
     {
-      //let pageTitle = document.getElementById("pageTitle");
       pageTitle.addEventListener("click", this.TitleClick.bind(this));
     }
 
-    // The title click event handler.
     TitleClick()
     {
       alert("The Title was clicked.");

@@ -8,8 +8,6 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <link rel='stylesheet' type='text/css' href='Intro.css' />
   <script>
-
-    // Display another page.
     function GoToInlineEvent()
     {
       window.location.href = "5InlineEvent.html";
@@ -36,24 +34,21 @@
     is referred to as "Calling" the function or a function "Call".
   </p>
   <pre>
-  &lt;head&gt;
-    &lt;script&gt;
-      // Functions are added to the DOM window object.
-      function GoToInlineEvent()
-      {
-        window.location.href = "5InlineEvent.html";
-      }
-    &lt;/script&gt;
-  &lt;/head&gt;</pre>
+  &lt;script&gt;
+    function GoToInlineEvent()
+    {
+      window.location.href = "5InlineEvent.html";
+    }
+  &lt;/script&gt;</pre>
   <p>
     The event handler assignment now looks like this:<br />
     &lt;button onclick="GoToInlineEvent()"&gt;&lt;- InlineEvent&lt/button&gt;
   </p>
   <button onclick="GoToInlineEvent()">&lt;- InlineEvent</button>
   <p>
-    In this case the functionality is exactly the same but it makes
-    for much cleaner code. Also the handler function can be called from
-    other places in the page which prevents duplication.
+    In this case the functionality is exactly the same but it makes for much
+    cleaner code. Also the handler function can be called from other places in
+    the page which prevents duplication.
   </p>
   <a href="5InlineEvent.html" class="button">&lt;- InlineEvent</a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
