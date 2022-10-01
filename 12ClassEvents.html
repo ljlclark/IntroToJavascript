@@ -34,25 +34,25 @@
   </p>
   <pre>
   // Code in IntroToJS.js file.
-  class TitleClass
+  class LJCTitleClass
   {
     AddEvents()
     {
       pageTitle.addEventListener("click", this.TitleClick.bind(this));
     }
+  }
 
-    TitleClick()
-    {
-      alert("The Title was clicked.");
-    }
-  }</pre>
+  &lt;script&gt;
+    let titleObject = new LJCTitleClass();
+    titleObject.AddEvents();
+  &lt;/script&gt;</pre>
   <a href="11TitleClass.html" class="button">&lt;- TitleClass</a>
   <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
   <!--<a href="8AddEvent.html" class="button">AddEvent -&gt;</a>-->
   <h6>12ClassEvents</h6>
 
   <script>
-    let titleObject = new TitleClass();
+    let titleObject = new LJCTitleClass();
     titleObject.AddEvents();
   </script>
 </body>

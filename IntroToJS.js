@@ -48,7 +48,7 @@ function ShowParagraphValues()
   elem.innerHTML += `className: ${elem.className}<br />`
 }
 
-class TitleClass
+class LJCTitleClass
 {
   // Initializes an object instance.
   constructor()
