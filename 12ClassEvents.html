@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 12ClassEvents.html -->
+<html lang="en">
+<head>
+  <title>Class Events</title>
+  <meta name="author" content="Lester J. Clark" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel='stylesheet' type='text/css' href='Intro.css' />
+  <script src="IntroToJS.js"></script>
+</head>
+<body>
+  <div class="PathText">
+    / <a href="index.html">Home</a>
+    / ClassEvents
+  </div>
+  <h3 id="pageTitle">Class Events</h3>
+  <p>
+    A class can be defined that assigns the event handlers required for that
+    class. It can also contain the event handler methods. This way all the
+    code needed for that class is contained and protected inside the class.
+  </p>
+  <p>
+    An object's contained objects, methods and properties are called "members".
+    This is because they belong to the object and can only be used by first
+    specifying the object name, then a dot "." and then the contained member
+    name. As in the object: titleObject.AddEvents().
+  </p>
+  <p>
+    Members inside the class are used by adding the "this" keyword. As in
+    this.TitleClick(). Also notice that the addEventListener method requires
+    the name of the event handler method to call the "bind" method. This is to
+    make sure the event handler in the object is called correctly.
+  </p>
+  <pre>
+  // Code in IntroToJS.js file.
+  class TitleClass
+  {
+    // Adds the required event handler assignment.
+    AddEvents()
+    {
+      //let pageTitle = document.getElementById("pageTitle");
+      pageTitle.addEventListener("click", this.TitleClick.bind(this));
+    }
+
+    // The title click event handler.
+    TitleClick()
+    {
+      alert("The Title was clicked.");
+    }
+  }</pre>
+  <a href="11TitleClass.html" class="button">&lt;- TitleClass</a>
+  <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+  <!--<a href="8AddEvent.html" class="button">AddEvent -&gt;</a>-->
+  <h6>12ClassEvents</h6>
+
+  <script>
+    let titleObject = new TitleClass();
+    titleObject.AddEvents();
+  </script>
+</body>
+</html>

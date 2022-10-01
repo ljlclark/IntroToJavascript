@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 11TitleClass.html -->
+<html lang="en">
+<head>
+  <title>The "Title" Class</title>
+  <meta name="author" content="Lester J. Clark" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel='stylesheet' type='text/css' href='Intro.css' />
+  <script src="IntroToJS.js"></script>
+</head>
+<body>
+  <div class="PathText">
+    / <a href="index.html">Home</a>
+    / TitleClass
+  </div>
+  <h3 id="pageTitle">The "Title" Class</h3>
+  <p>
+    A Class definition is coded in Javascript by starting with the "class"
+    keyword and then the Class name.
+  </p>
+  <p>
+    The class definition is contained within the opening and closing braces
+    just like a function.
+  </p>
+  <p>
+    Methods are what functions should be called when they are inside a Class.
+    However, Methods are defined differently from functions because they do not
+    start with the keyword "function".
+  </p>
+  <pre>
+  // Code in IntroToJS.js file.
+  class TitleClass
+  {
+    // Adds the required event handler assignment.
+    AddEvents()
+    {
+      //let pageTitle = document.getElementById("pageTitle");
+      pageTitle.addEventListener("click", this.TitleClick.bind(this));
+    }
+
+    // The title click event handler.
+    TitleClick()
+    {
+      alert("The Title was clicked.");
+    }
+  }</pre>
+  <a href="10Classes.html" class="button">&lt;- Classes</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="12ClassEvents.html" class="button">ClassEvents -&gt;</a>
+  <h6>11TitleClass</h6>
+
+  <script>
+    let titleObject = new TitleClass();
+    titleObject.AddEvents();
+  </script>
+</body>
+</html>
