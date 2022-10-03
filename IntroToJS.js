@@ -13,7 +13,6 @@ function ShowWindowValues()
   //let elem = document.getElementById("windowValues");
   //let elem = window.windowValues;
   let elem = windowValues;
-  //windows.elem.innerHTML = "Window Values<br />";
   elem.innerHTML = "Window Values<br />";
   elem.innerHTML += "document...<br />";
   elem.innerHTML += "location...<br />";
@@ -25,7 +24,6 @@ function ShowDocumentValues()
   //let elem = document.getElementById("documentValues");
   //let elem = window.documentValues;
   let elem = documentValues;
-
   elem.innerHTML = "Document Values<br />";
   //elem.innerHTML += `nodeType: ${window.document.nodeType}<br />`;
   elem.innerHTML += `nodeType: ${document.nodeType}(Document)<br />`;
