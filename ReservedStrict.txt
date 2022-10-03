@@ -1,0 +1,20 @@
+arguments
+eval
+
+implements
+interface
+let
+package
+private
+protected
+public
+static
+yield
+
+*types - typeof()
+undefined
+string
+number
+boolean
+array
+object

@@ -40,12 +40,13 @@ function ShowParagraphValues()
   //let elem = document.getElementById("paragraphValues");
   //let elem = window.paragraphValues;
   let elem = paragraphValues;
-  elem.innerHTML = "Paragraph Values<br />";
-  elem.innerHTML += `nodeType: ${elem.nodeType}(Element)<br />`;
-  elem.innerHTML += `tagName: ${elem.tagName}<br />`
-  elem.innerHTML += `localName: ${elem.localName}<br />`
-  elem.innerHTML += `id: ${elem.id}<br />`
-  elem.innerHTML += `className: ${elem.className}<br />`
+  let text = "Paragraph Values<br />";
+  text += `nodeType: ${elem.nodeType}(Element)<br />`;
+  text += `tagName: ${elem.tagName}<br />`
+  text += `localName: ${elem.localName}<br />`
+  text += `id: ${elem.id}<br />`
+  text += `className: ${elem.className}<br />`
+  elem.innerHTML = text;
 }
 
 class LJCTitleClass
