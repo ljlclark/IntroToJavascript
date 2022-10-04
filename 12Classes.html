@@ -10,43 +10,45 @@
   <script src="IntroToJS.js"></script>
 </head>
 <body>
-  <div class="PathText">
-    / <a href="index.html">Home</a>
-    / OOP
+  <div class="page">
+    <div class="PathText">
+      / <a href="index.html">Home</a>
+      / OOP
+    </div>
+    <h3 id="pageTitle">Object Oriented Programming</h3>
+    <p>
+      The functions created so far have all become part of the "window" object.
+      They are called Global functions because they can be called from anywhere
+      in the Javascript.
+    </p>
+    <p>
+      If another script file is loaded with a global function using the same name,
+      then the previous function is replaced with the new function. In this case
+      it can be hard to figure out what is wrong.
+    </p>
+    <p>
+      When an object or other data is created in Javascript, outside of a function
+      or another object, they also are Global and must have a unique name in the
+      parent page.
+    </p>
+    <p>
+      With OOP, a Class definition can be created that contains the data values
+      and methods required to provide custom object behavior.
+    </p>
+    <p>
+      When an object is created from that Class the data and method names inside
+      the object do not have to be unique from other objects. This is called
+      encapsulation; because the data and methods are contained and protected in
+      the object.
+    </p>
+    <p>
+      An object is create from a Class by using the "new" keyword.<br />
+      let myObject = new MyClass();
+    </p>
+    <a href="11DOMValues.html" class="button">&lt;- DOMValues</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="13TitleClass.html" class="button">TitleClass -&gt;</a>
+    <h6>12Classes</h6>
   </div>
-  <h3 id="pageTitle">Object Oriented Programming</h3>
-  <p>
-    The functions created so far have all become part of the "window" object.
-    They are called Global functions because they can be called from anywhere
-    in the Javascript.
-  </p>
-  <p>
-    If another script file is loaded with a global function using the same name,
-    then the previous function is replaced with the new function. In this case
-    it can be hard to figure out what is wrong.
-  </p>
-  <p>
-    When an object or other data is created in Javascript, outside of a function
-    or another object, they also are Global and must have a unique name in the
-    parent page.
-  </p>
-  <p>
-    With OOP, a Class definition can be created that contains the data values
-    and methods required to provide custom object behavior.
-  </p>
-  <p>
-    When an object is created from that Class the data and method names inside
-    the object do not have to be unique from other objects. This is called
-    encapsulation; because the data and methods are contained and protected in
-    the object.
-  </p>
-  <p>
-    An object is create from a Class by using the "new" keyword.<br />
-    let myObject = new MyClass();
-  </p>
-  <a href="11DOMValues.html" class="button">&lt;- DOMValues</a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="13TitleClass.html" class="button">TitleClass -&gt;</a>
-  <h6>12Classes</h6>
 </body>
 </html>

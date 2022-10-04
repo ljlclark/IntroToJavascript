@@ -9,43 +9,45 @@
   <link rel='stylesheet' type='text/css' href='Intro.css' />
 </head>
 <body>
-  <div class="PathText">
-    / <a href="index.html">Home</a>
-    / InlineEvent
-  </div>
-  <h3 id="pageTitle">The Inline Event Handler</h3>
-  <p>
-    There are many different events that can occur and each one has a specific
-    name. One of the most common events is a "click" event.
-  </p>
-  <p>
-    Event Handler code can be assigned at the element level. This code will
-    be run for only that element and that is the only code that will be
-    executed for that element event.
-  </p>
-  <p>
-    This is an example of the Button element running the inline event handler
-    code to jump to a different page when it is clicked with the mouse button.
+  <div class="page">
+    <div class="PathText">
+      / <a href="index.html">Home</a>
+      / InlineEvent
+    </div>
+    <h3 id="pageTitle">The Inline Event Handler</h3>
+    <p>
+      There are many different events that can occur and each one has a specific
+      name. One of the most common events is a "click" event.
+    </p>
+    <p>
+      Event Handler code can be assigned at the element level. This code will
+      be run for only that element and that is the only code that will be
+      executed for that element event.
+    </p>
+    <p>
+      This is an example of the Button element running the inline event handler
+      code to jump to a different page when it is clicked with the mouse button.
+      <br />
+      &lt;button onclick="window.location.href='4Events.html'"&gt;&lt;-
+      Events&lt/button&gt;
+    </p>
+    <p>
+      The "onclick" event is assigned the handler code "window.location.href=
+      '4Events.html'". This jumps to the specified page when the button is
+      clicked.
+    </p>
+    <button onclick="window.location.href='4Events.html'">&lt;- Events</button>
+    <p>
+      This type of event handler code should only used if there is one or two code
+      statements to be executed.
+    </p>
+    <a href="https://www.w3schools.com/js/js_events.asp">W3Schools - Events</a>
     <br />
-    &lt;button onclick="window.location.href='4Events.html'"&gt;&lt;-
-    Events&lt/button&gt;
-  </p>
-  <p>
-    The "onclick" event is assigned the handler code "window.location.href=
-    '4Events.html'". This jumps to the specified page when the button is
-    clicked.
-  </p>
-  <button onclick="window.location.href='4Events.html'">&lt;- Events</button>
-  <p>
-    This type of event handler code should only used if there is one or two code
-    statements to be executed.
-  </p>
-  <a href="https://www.w3schools.com/js/js_events.asp">W3Schools - Events</a>
-  <br />
-  <br />
-  <a href="4Events.html" class="button">&lt;- Events</a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="6InternalScript.html" class="button">InternalScript -&gt;</a>
-  <h6>5InlineEvent</h6>
+    <br />
+    <a href="4Events.html" class="button">&lt;- Events</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="6InternalScript.html" class="button">InternalScript -&gt;</a>
+    <h6>5InlineEvent</h6>
+  </div>
 </body>
 </html>

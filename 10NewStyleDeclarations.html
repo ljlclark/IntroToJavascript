@@ -9,41 +9,43 @@
   <link rel='stylesheet' type='text/css' href='Intro.css' />
 </head>
 <body>
-  <div class="PathText">
-    / <a href="index.html">Home</a>
-    / NewStyleDeclarations
+  <div class="page">
+    <div class="PathText">
+      / <a href="index.html">Home</a>
+      / NewStyleDeclarations
+    </div>
+    <h3 id="pageTitle">New Style Variable Declarations</h3>
+    <p>
+      Strict mode is set with the text "use strict" at the beginning of the script
+      file, script element or function. This will prevent the creation of a global
+      variable inside a function or method when the var, let or const keyword is
+      missing.
+    </p>
+    <p>
+      A variable can be created using the "let" keyword.
+    </p>
+    <p>let myVar = "value";</p>
+    <p>
+      This variable will belong to the function, class or method where it is
+      defined. It will prevent you from accidently defining it again with the
+      let, var or const keyword.
+    </p>
+    <p>
+      Using "let" the variable value and type can still be redefined somewhere
+      else in the code. As in: var myVar = 5;. Now the variable type is "numeric"
+      which has a different behavior than a type of "string".
+    </p>
+    <p>
+      A variable can be created using the "const" keyword.
+    </p>
+    <p>const myVar = "value";</p>
+    <p>
+      Using "const" will prevent changing the variable value or type.
+    </p>
+    <a href="9OldStyleDeclarations.html" class="button">&lt;- OldStyleDeclarations</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="11DOMValues.html" class="button">DOMValues -&gt;</a>
+    <h6>10NewStyleDeclarations</h6>
   </div>
-  <h3 id="pageTitle">New Style Variable Declarations</h3>
-  <p>
-    Strict mode is set with the text "use strict" at the beginning of the script
-    file, script element or function. This will prevent the creation of a global
-    variable inside a function or method when the var, let or const keyword is
-    missing.
-  </p>
-  <p>
-    A variable can be created using the "let" keyword.
-  </p>
-  <p>let myVar = "value";</p>
-  <p>
-    This variable will belong to the function, class or method where it is
-    defined. It will prevent you from accidently defining it again with the
-    let, var or const keyword.
-  </p>
-  <p>
-    Using "let" the variable value and type can still be redefined somewhere
-    else in the code. As in: var myVar = 5;. Now the variable type is "numeric"
-    which has a different behavior than a type of "string".
-  </p>
-  <p>
-    A variable can be created using the "const" keyword.
-  </p>
-  <p>const myVar = "value";</p>
-  <p>
-    Using "const" will prevent changing the variable value or type.
-  </p>
-  <a href="9OldStyleDeclarations.html" class="button">&lt;- OldStyleDeclarations</a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="11DOMValues.html" class="button">DOMValues -&gt;</a>
-  <h6>10NewStyleDeclarations</h6>
 </body>
 </html>

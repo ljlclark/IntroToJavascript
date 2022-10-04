@@ -24,45 +24,47 @@
   </script>
 </head>
 <body>
-  <div class="PathText">
-    / <a href="index.html">Home</a>
-    / AddEvent
-  </div>
-  <h3 id="pageTitle">Adding an Event</h3>
-  <p>
-    Event handlers can be assigned to an element in a script function instead
-    of adding them with an inline event. Notice the AddEvents() function call
-    at the end of the &lt;body&gt; element.
-  </p>
-  <p>
-    The addEventListener() method of the target element is used to make the
-    assignment.
-  </p>
-  <pre>
-  &lt;head&gt;
-    &lt;script&gt;
-      // Adds the required event handler assignment.
-      function AddEvents()
-      {
-        pageTitle.addEventListener("click", TitleClick);
-      }
+  <div class="page">
+    <div class="PathText">
+      / <a href="index.html">Home</a>
+      / AddEvent
+    </div>
+    <h3 id="pageTitle">Adding an Event</h3>
+    <p>
+      Event handlers can be assigned to an element in a script function instead
+      of adding them with an inline event. Notice the AddEvents() function call
+      at the end of the &lt;body&gt; element.
+    </p>
+    <p>
+      The addEventListener() method of the target element is used to make the
+      assignment.
+    </p>
+    <pre>
+    &lt;head&gt;
+      &lt;script&gt;
+        // Adds the required event handler assignment.
+        function AddEvents()
+        {
+          pageTitle.addEventListener("click", TitleClick);
+        }
 
-      // The title click event handler.
-      function TitleClick()
-      {
-        alert("Title was clicked.");
-      }
-    &lt;/script&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
+        // The title click event handler.
+        function TitleClick()
+        {
+          alert("Title was clicked.");
+        }
+      &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
     // Elements are added by "id" name to the DOM windows object.
     &lt;h3 id="pageTitle"&gt;Adding an Event&lt;/h3&gt;
     &lt;script&gt;AddEvents();&lt;/script&gt;
   &lt;/body&gt;</pre>
-  <a href="7ExternalScript.html" class="button">&lt;- ExternalScript</a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="9OldStyleDeclarations.html" class="button">OldStyleDeclarations -&gt;</a>
-  <h6>8AddEvent</h6>
+    <a href="7ExternalScript.html" class="button">&lt;- ExternalScript</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="9OldStyleDeclarations.html" class="button">OldStyleDeclarations -&gt;</a>
+    <h6>8AddEvent</h6>
+  </div>
 
   <script>
     AddEvents();

@@ -9,42 +9,44 @@
   <link rel='stylesheet' type='text/css' href='Intro.css' />
 </head>
 <body>
-  <div class="PathText">
-    / <a href="index.html">Home</a>
-    / OldStyleDeclarations
+  <div class="page">
+    <div class="PathText">
+      / <a href="index.html">Home</a>
+      / OldStyleDeclarations
+    </div>
+    <h3 id="pageTitle">Old Style Variable Declarations</h3>
+    <p>
+      Up to this point, changes have been made directly to existing objects in the
+      DOM. Often it is better to create a temporary variable that is easier to use
+      and can be modified without changing the original value.
+    </p>
+    <p>
+      In script that is not in "strict" mode, a variable can be created by just
+      typing the variable name and assigning it a value.
+    </p>
+    <p>myVar = "value";</p>
+    <p>
+      This creates a global variable of type "string" where the value and type can
+      be changed anywhere in the script. It is easy with this syntax to create
+      errors that are hard to find.
+    </p>
+    <p>
+      A variable can also be created using the "var" keyword.
+    </p>
+    <p>var myVar = "value";</p>
+    <p>
+      This variable will belong to the function, class or method where it is
+      defined.
+    </p>
+    <p>
+      Using "var", the variable value and type can still be redefined somewhere
+      else in the code. As in: var myVar = 5;. Now the variable type is "numeric"
+      which has a different behavior than a type of "string".
+    </p>
+    <a href="8AddEvent.html" class="button">&lt;- AddEvent</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="10NewStyleDeclarations.html" class="button">NewStyleDeclarations -&gt;</a>
+    <h6>9OldStyleDeclarations</h6>
   </div>
-  <h3 id="pageTitle">Old Style Variable Declarations</h3>
-  <p>
-    Up to this point, changes have been made directly to existing objects in the
-    DOM. Often it is better to create a temporary variable that is easier to use
-    and can be modified without changing the original value.
-  </p>
-  <p>
-    In script that is not in "strict" mode, a variable can be created by just
-    typing the variable name and assigning it a value.
-  </p>
-  <p>myVar = "value";</p>
-  <p>
-    This creates a global variable of type "string" where the value and type can
-    be changed anywhere in the script. It is easy with this syntax to create
-    errors that are hard to find.
-  </p>
-  <p>
-    A variable can also be created using the "var" keyword.
-  </p>
-  <p>var myVar = "value";</p>
-  <p>
-    This variable will belong to the function, class or method where it is
-    defined.
-  </p>
-  <p>
-    Using "var", the variable value and type can still be redefined somewhere
-    else in the code. As in: var myVar = 5;. Now the variable type is "numeric"
-    which has a different behavior than a type of "string".
-  </p>
-  <a href="8AddEvent.html" class="button">&lt;- AddEvent</a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="10NewStyleDeclarations.html" class="button">NewStyleDeclarations -&gt;</a>
-  <h6>9OldStyleDeclarations</h6>
 </body>
 </html>
