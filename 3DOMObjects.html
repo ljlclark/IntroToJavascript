@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <link rel='stylesheet' type='text/css' href='Intro.css' />
   <script src="Intro.js"></script>
+  <script>
+    window.alert("Hi!");
+    //alert(window.location.href)
+  </script>
 </head>
 <body>
   <div class="page">
@@ -22,27 +26,27 @@
       displayed.
     </p>
     <p>
-      The window object contains the "document" object. The Document object
-      represents the entire HTML Document.<br />
-
+      The window object has a method called alert(). This method displays
+      a popup window with the text provided for the first method "Parameter".
     </p>
     <p>
-      The document object contains the "head" object and "body" object.
+      A parameter is a value passed to a function or method which modifies
+      how the function or method operates.
     </p>
     <p>
-      The document object contains the documentElement object. This is the
-      top-level element in an HTML page. The Document Element tag is &lt;html&gt;.
+      The following Javascript can be executed before the page is loaded
+      by using the "script" element.
     </p>
-    <a href="https://www.w3schools.com/js/js_htmldom.asp">W3Schools - DOM</a>
-    <br />
-    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#what_is_the_dom">
-      Mozilla - DOM
-    </a>
-    <br />
+    <pre>
+    &lt;head&gt;
+      &lt;script&gt;
+        window.alert("Hi!");
+      &lt;/script&gt;
+    &lt;/head&gt;</pre>
     <br />
     <a href="2DOM.html" class="button">&lt;- DOM</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="4Events.html" class="button">Events -&gt;</a>
+    <a href="3DOMObjects2.html" class="button">DOM 2 -&gt;</a>
     <h6>3DOMObjects</h6>
   </div>
   <script>
