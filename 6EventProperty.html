@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Copyright (c) Lester J. Clark and Contributors -->
+<!-- Licensed under the MIT license -->
+<!-- 6EventProperty.html -->
+<html lang="en" xmlns="http:/www.w3.org/1999/xhtml">
+<head>
+  <title>Element Event Property</title>
+  <meta charset="ufr-8" />
+  <meta name="description" content="The HTML element event property." />
+  <meta name="keywords" content="HTML Element Event Property" />
+  <meta name="author" content="Lester J.Clark" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="Intro.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="PathText">
+      Javascript: / <a id="home" href="index.html">Home</a>
+      / EventProperty
+    </div>
+    <h3 id="pageTitle">The Element Event Property</h3>
+    <p>
+      Event Handler code can be assigned to an element event property.
+    </p>
+    <pre>
+  &lt;script&gt;
+    function DoIt()
+    {
+      location.href = "5InlineEvent.html";
+    }
+    // TestButton is the id of the button element.
+    // This code must be run after the button is created.
+    TestButton.onclick = DoIt;
+
+    // Another way to do this is with an anonymous method.
+    // An anonymous method cannot be used from anywhere else.
+    TestButton.onclick = function ()
+    {
+      location.href = "5InlineEvent.html";
+    }
+
+    // Another way to create an anonymous method.
+    TestButton.onclick = () =>
+    {
+      location.href = "5InlineEvent.html";
+    }
+  &lt;/script&gt;</pre>
+    <button id="TestButton">&lt;- InlineEvents</button>
+    <br />
+    <br />
+    <a href="5InlineEvent.html" class="button">&lt;- InlineEvent</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="6InternalScript.html" class="button">InternalScript -&gt;</a>
+    <h6>6EventProperty</h6>
+  </div>
+  <script>
+    TestButton.onclick = () =>
+    {
+      location.href = "5InlineEvent.html";
+    }
+  </script>
+</body>
+</html>
