@@ -1,5 +1,6 @@
 /* Intro.css */
 
+/* ElementSelectors */
 body {
   background: #F2F7FF;
   font-size: 11pt;
@@ -9,6 +10,7 @@ pre {
   font-size: 9pt;
 }
 
+/* Class Selectors */
 .button {
   display: inline-block;
   background: lightsteelblue;
@@ -16,6 +18,10 @@ pre {
   padding: 5px 5px 5px 5px;
   text-decoration: none;
 }
+
+  .button:hover {
+    background-color: #85C1E9;
+  }
 
 .demo {
   background: lightsteelblue;
@@ -29,8 +35,14 @@ pre {
 }
 
 .page {
-  margin-left: 15px;
-  margin-right: 10px;
+  background-color: aliceblue;
+  max-width: 95%;
+}
+
+.pageCenter {
+  background-color: aliceblue;
+  text-align: center;
+  max-width: 95%;
 }
 
 .PathText {
@@ -41,10 +53,7 @@ pre {
   padding-top: 5px;
 }
 
-.button:hover {
-  background-color: #85C1E9;
-}
-
+/* ID Selectors */
 #pageTitle {
   background: lightsteelblue;
 }

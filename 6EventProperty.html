@@ -24,7 +24,7 @@
     </p>
     <pre>
   &lt;script&gt;
-    function DoIt()
+    function DoIt(event)
     {
       location.href = "5InlineEvent.html";
     }
@@ -34,13 +34,13 @@
 
     // Another way to do this is with an anonymous method.
     // An anonymous method cannot be used from anywhere else.
-    TestButton.onclick = function ()
+    TestButton.onclick = function (event)
     {
       location.href = "5InlineEvent.html";
     }
 
     // Another way to create an anonymous method.
-    TestButton.onclick = () =>
+    TestButton.onclick = (event) =>
     {
       location.href = "5InlineEvent.html";
     }
@@ -54,8 +54,9 @@
     <h6>6EventProperty</h6>
   </div>
   <script>
-    TestButton.onclick = () =>
+    TestButton.onclick = (event) =>
     {
+      alert(event.target.tagName);
       location.href = "5InlineEvent.html";
     }
   </script>
