@@ -11,7 +11,7 @@
   <meta name='viewport' content='width=device-width initial-scale=1' />
   <link rel="stylesheet" type="text/css" href="CSS\Sidebar.css" />
   <link rel='stylesheet' type='text/css' href='CSS\Intro.css' />
-  <script src="Script/NavEvents.js"></script>
+  <script src="Script\NavEvents.js"></script>
 </head>
 <body>
   <!-- Show/Hide Menu Icon -->
@@ -92,7 +92,7 @@
   </div>
   <script>
     const contentFrame = document.getElementById("contentFrame");
-    const navEvents = new CSSNavEvents(contentFrame);
+    const navEvents = new NavEvents(contentFrame);
     navEvents.AddEvents();
   </script>
 </body>
