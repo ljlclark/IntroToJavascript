@@ -5,47 +5,95 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Intro to Javascript Tutorial</title>
-  <meta name='author' content='Lester J. Clark' />
   <meta charset='utf-8' />
-  <meta name="keywords" content="LJC, Javascript, Tutorial, Simple">
+  <meta name='author' content='Lester J. Clark' />
+  <meta name="keywords" content="LJC, Javascript, Tutorial, Simple, GitHub">
   <meta name='viewport' content='width=device-width initial-scale=1' />
-  <link rel='stylesheet' type='text/css' href='Intro.css' />
-  <style>
-    .banner {
-      background: #1798B7;
-      height: 60px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="CSS\Sidebar.css" />
+  <link rel='stylesheet' type='text/css' href='CSS\Intro.css' />
+  <script src="Script/NavEvents.js"></script>
 </head>
 <body>
-  <div class="page">
-    <h3 class="banner"><br />Simple and Brief</h3>
-    <h3 id="pageTitle" style="text-align: center">Intro to Javascript Tutorial</h3>
-    <p style="text-align: center">
-      <a href="1Javascript.html">What is Javascript?</a><br />
-      <a href="2DOM.html">Document Object Model</a><br />
-      <a href="3DOMObjects.html">DOM Objects</a><br />
-      <a href="3DOMObjects2.html">DOM Objects 2</a><br />
-      <a href="4Events.html">Events</a><br />
-      <a href="5InlineEvent.html">The Inline Event Handler</a><br />
-      <a href="6InternalScript.html">Internal Script</a><br />
-      <a href="7ExternalScript.html">External Script</a><br />
-      <a href="8AddEvent.html">Adding an Event</a><br />
-      <a href="9OldStyleDeclarations.html">Old Style Variable Declarations</a><br />
-      <a href="10NewStyleDeclarations.html">New Style Variable Declarations</a><br />
-      <a href="11DOMValues.html">Sample DOM Tree Values</a><br />
-      <a href="12Classes.html">Object Oriented Programming</a><br />
-      <a href="13TitleClass.html">The Title Class</a><br />
-      <a href="14ClassEvents.html">Class Event Handlers</a><br />
-    </p>
-    <h3 style="background: lightsteelblue; text-align: center">Other Simple and Brief Tutorials</h3>
-    <p style="text-align: center">
-      <a href="https://ljlclark.github.io/IntroToHTML/">Intro to HTML5 Tutorial</a><br />
-      <a href="https://ljlclark.github.io/IntroToCSS/">Intro to CSS Tutorial</a><br />
-      <a href="https://ljlclark.github.io/IntroToPHP/">Intro to PHP Tutorial</a><br />
-    </p>
-    <h6>index</h6>
+  <!-- Show/Hide Menu Icon -->
+  <span id="menubar"><img id="menuIco" src="AppManager.ico" /></span>
+  <div id="sidebar">
+    <br />
+    <div class="navItem" data-href="JSMain.html">
+      Home
+    </div>
+    <div class="navItem"
+         data-href="HTML\1Javascript.html">
+      What is Javascript?
+    </div>
+    <div class="navItem"
+         data-href="HTML\2DOM.html">
+      Document Object Model
+    </div>
+    <div class="navItem"
+         data-href="HTML\3DOMObjects.html">
+      DOM Objects
+    </div>
+    <div class="navItem"
+         data-href="HTML\3DOMObjects2.html">
+      DOM Objects 2
+    </div>
+    <div class="navItem"
+         data-href="HTML\4Events.html">
+      Events
+    </div>
+    <div class="navItem"
+         data-href="HTML\5InlineEvent.html">
+      The Inline Event Handler
+    </div>
+    <div class="navItem"
+         data-href="HTML\6InternalScript.html">
+      Internal Script
+    </div>
+    <div class="navItem"
+         data-href="HTML\7ExternalScript.html">
+      External Script
+    </div>
+    <div class="navItem"
+         data-href="HTML\8AddEvent.html">
+      Adding an Event
+    </div>
+    <div class="navItem"
+         data-href="HTML\9OldStyleDeclarations.html">
+      Old Style Variable Declarations
+    </div>
+    <div class="navItem"
+         data-href="HTML\10NewStyleDeclarations.html">
+      New Style Variable Declarations
+    </div>
+    <div class="navItem"
+         data-href="HTML\11DOMValues.html">
+      Sample DOM Tree Values
+    </div>
+    <div class="navItem"
+         data-href="HTML\12Classes.html">
+      Object Oriented Programming
+    </div>
+    <div class="navItem"
+         data-href="HTML\13TitleClass.html">
+      The Title Class
+    </div>
+    <div class="navItem"
+         data-href="HTML\14ClassEvents.html">
+      Class Event Handlers
+    </div>
+    <br />
+    <div class="smallText">
+      Copyright &copy Lester J. Clark and Contributors.<br />
+      Licensed under the MIT License.
+    </div>
   </div>
+  <div id="content">
+    <iframe id="contentFrame" src="JSMain.html"></iframe>
+  </div>
+  <script>
+    const contentFrame = document.getElementById("contentFrame");
+    const navEvents = new CSSNavEvents(contentFrame);
+    navEvents.AddEvents();
+  </script>
 </body>
 </html>
