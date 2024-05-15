@@ -92,6 +92,7 @@
     <iframe id="contentFrame" src="JSMain.html"></iframe>
   </div>
   <script>
+    localStorage.removeItem("isLocal");
     const contentFrame = document.getElementById("contentFrame");
     const navEvents = new NavEvents(contentFrame);
     navEvents.AddEvents();
