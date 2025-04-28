@@ -59,5 +59,14 @@
     <a href="7ExternalScript.html" class="button">ExternalScript -&gt;</a>
     <h6>6InternalScript</h6>
   </div>
+  <script>
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("internalScript", origin);
+    });
+  </script>
 </body>
 </html>

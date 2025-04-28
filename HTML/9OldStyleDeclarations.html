@@ -52,5 +52,14 @@
     <a href="10NewStyleDeclarations.html" class="button">NewStyleDeclarations -&gt;</a>
     <h6>9OldStyleDeclarations</h6>
   </div>
+  <script>
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("oldStyle", origin);
+    });
+  </script>
 </body>
 </html>

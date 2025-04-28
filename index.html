@@ -19,66 +19,66 @@
   <div id="sidebar">
     <br />
     <div class="navGroup">Javascript</div>
-    <div class="navItem" data-href="JSMain.html">
+    <div id="home" class="navItem" data-href="JSMain.html">
       Home
     </div>
-    <div class="navItem"
+    <div id="javascript" class="navItem"
          data-href="HTML\1Javascript.html">
       What is Javascript?
     </div>
-    <div class="navItem"
+    <div id="dom" class="navItem"
          data-href="HTML\2DOM.html">
       Document Object Model
     </div>
-    <div class="navItem"
+    <div id="domobj" class="navItem"
          data-href="HTML\3DOMObjects.html">
       DOM Objects
     </div>
-    <div class="navItem"
+    <div id="domobj2" class="navItem"
          data-href="HTML\3DOMObjects2.html">
       DOM Objects 2
     </div>
-    <div class="navItem"
+    <div id="events" class="navItem"
          data-href="HTML\4Events.html">
       Events
     </div>
-    <div class="navItem"
+    <div id="inline" class="navItem"
          data-href="HTML\5InlineEvent.html">
       The Inline Event Handler
     </div>
-    <div class="navItem"
+    <div id="internalScript" class="navItem"
          data-href="HTML\6InternalScript.html">
       Internal Script
     </div>
-    <div class="navItem"
+    <div id="externalScript" class="navItem"
          data-href="HTML\7ExternalScript.html">
       External Script
     </div>
-    <div class="navItem"
+    <div id="adding" class="navItem"
          data-href="HTML\8AddEvent.html">
       Adding an Event
     </div>
-    <div class="navItem"
+    <div id="oldStyle" class="navItem"
          data-href="HTML\9OldStyleDeclarations.html">
       Old Style Variable Declarations
     </div>
-    <div class="navItem"
+    <div id="newStyle" class="navItem"
          data-href="HTML\10NewStyleDeclarations.html">
       New Style Variable Declarations
     </div>
-    <div class="navItem"
+    <div id="domTree" class="navItem"
          data-href="HTML\11DOMValues.html">
       Sample DOM Tree Values
     </div>
-    <div class="navItem"
+    <div id="oop" class="navItem"
          data-href="HTML\12Classes.html">
       Object Oriented Programming
     </div>
-    <div class="navItem"
+    <div id="titleClass" class="navItem"
          data-href="HTML\13TitleClass.html">
       The Title Class
     </div>
-    <div class="navItem"
+    <div id="classEvents" class="navItem"
          data-href="HTML\14ClassEvents.html">
       Class Event Handlers
     </div>
@@ -96,6 +96,24 @@
     const contentFrame = document.getElementById("contentFrame");
     const navEvents = new NavEvents(contentFrame);
     navEvents.AddEvents();
+
+    // Handle message.
+    window.addEventListener('message', function (event)
+    {
+      if (event.origin == window.origin)
+      {
+        if (navEvents.PrevNavItem != null)
+        {
+          // Resets to original value.
+          navEvents.PrevNavItem.style.backgroundColor = "";
+        }
+
+        // Get data from message.
+        let eItem = document.getElementById(event.data)
+        navEvents.PrevNavItem = eItem;
+        eItem.style.backgroundColor = "#d4dfff";
+      }
+    });
   </script>
 </body>
 </html>

@@ -54,5 +54,14 @@
     <a href="6EventProperty.html" class="button">EventProperty -&gt;</a>
     <h6>5InlineEvent</h6>
   </div>
+  <script>
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("inline", origin);
+    });
+  </script>
 </body>
 </html>

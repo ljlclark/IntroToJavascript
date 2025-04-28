@@ -34,6 +34,14 @@
     window.ShowWindowValues();
     ShowDocumentValues();
     ShowParagraphValues();
+
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("domTree", origin);
+    });
   </script>
 </body>
 </html>

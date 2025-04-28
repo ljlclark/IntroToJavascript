@@ -53,5 +53,14 @@
     <a href="13TitleClass.html" class="button">TitleClass -&gt;</a>
     <h6>12Classes</h6>
   </div>
+  <script>
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("oop", origin);
+    });
+  </script>
 </body>
 </html>

@@ -38,5 +38,14 @@
     <a href="4Events.html" class="button">Events -&gt;</a>
     <h6>3DOMObjects2</h6>
   </div>
+  <script>
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("domobj2", origin);
+    });
+  </script>
 </body>
 </html>

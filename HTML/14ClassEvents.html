@@ -58,6 +58,14 @@
   <script>
     let titleObject = new LJCTitleClass();
     titleObject.AddEvents();
+
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("classEvents", origin);
+    });
   </script>
 </body>
 </html>

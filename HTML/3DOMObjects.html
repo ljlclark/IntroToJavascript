@@ -51,5 +51,14 @@
     <a href="3DOMObjects2.html" class="button">DOM 2 -&gt;</a>
     <h6>3DOMObjects</h6>
   </div>
+  <script>
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("domobj", origin);
+    });
+  </script>
 </body>
 </html>
