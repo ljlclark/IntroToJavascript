@@ -60,7 +60,7 @@
       // Send a message to index.html.
       let indexWindow = parent.parent;
       let origin = GetOrigin(window.origin);
-      indexWindow.postMessage("inline", origin);
+      indexWindow.postMessage("inlineEvent", origin);
     });
   </script>
 </body>

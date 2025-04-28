@@ -11,6 +11,7 @@
   <meta name="author" content="Lester J.Clark" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="..\CSS\Intro.css" />
+  <script src="..\Script\Intro.js"></script>
 </head>
 <body>
   <div class="page">
@@ -59,6 +60,14 @@
       alert(event.target.tagName);
       location.href = "5InlineEvent.html";
     }
+
+    window.addEventListener("load", function (event)
+    {
+      // Send a message to index.html.
+      let indexWindow = parent.parent;
+      let origin = GetOrigin(window.origin);
+      indexWindow.postMessage("eventProp", origin);
+    });
   </script>
 </body>
 </html>
